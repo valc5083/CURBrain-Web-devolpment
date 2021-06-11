@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="EDGE2021_LOGO.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURBrain</title>
+      <!-- Favicons -->
+    <link href="gx.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+      rel="stylesheet"
+    />
+    
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+
+   
+  </head>
+  <body>
+    <link rel="icon" href="EDGE2021_LOGO.png"/>
+     <!-- Main Stylesheet File -->
+   
+    <!-- Do reads the rule then start & good luck -->
+     <div class="contianer">
+      <header id="header" class="fixed-top">
+        <div class="container">
+          <div class="logo float-middle">
+            <h1 <title>INTRA'21</title></h1>
+            <h2 class="text-light">
+              <a href="#intro" class="scrollto"><img
+              
+                  alt=""
+                  class="img-fluid"
+                  data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="<strong>Geekonix</strong>" data-bs-trigger="hover"
+                />
+                <span><span style="color:#d00b02">G</span>ee<span style="color:#d00b02;">koni</span>x</span>
+              </a>
+            </h2>
+          </div>
+    <!-- import bootstrap -->
+    <link rel="stylesheet"
+        type="text/css"
+        href="bootstrap.css"
+          />
+
+    <!-- import our own stylesheet -->
+    <link href="style.css" 
+    rel="stylesheet" 
+    type= "text/css"/>
+
+    <!-- import jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+        <img class="crop-img" 
+          src="bughunt.jpg" 
+          alt="graffittied building"/> 
+      </div>
+      <div class="col-md-3">
+        <img class="crop-img" 
+          src="flawless.jpg" 
+          alt="display of cheese"/> 
+      </div>
+      <div class="col-md-3">
+        <img class="crop-img" 
+          src="crypto.jpg" 
+          alt="synethesizer workshop"/> 
+      </div>
+      <div class="col-md-3">
+        <img class="crop-img" 
+           src="webd.png" 
+           alt="City night"/> 
+      </div>
+    </div>
+    <!--
+      this is the large image which is
+      on a row of its own. 
+      I will change it's source in the 
+      javascript
+    -->
+    <div class="row">
+      <div class="col-md-12">
+        <img id="bigImage" 
+          class="large-img" 
+          src="webd.png" 
+          alt="graffittied building"/> 
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // when we click on the thumbnail
+    // we set the src attribute of the 
+    // bit image to be the same as the 
+    // src of the image we have clicked on
+    // ("this"). This loads the same
+    // image file into the big image
+    $(".crop-img").click(function(){
+      $("#bigImage").attr('src', 
+        $(this).attr('src'));
+    });
+  </script>
+   <nav class="main-nav-v float-right">
+            <ul>
+              <li class="active"><a href="#intro" class="scrollto">Home</a></li>
+              <li><a href="#about" class="scrollto">About Us</a></li>
+              <li><a href="#services" class="scrollto">Clubs</a></li>
+              <li><a href="#glimps" class="scrollto">Glimpses</a></li>
+              <li><a href="#team" class="scrollto">Past Guests</a></li>
+              <li><a href="#contact" class="scrollto">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav1 nav--open1"   id="nav1"   role="navigation">
+            <ul class="nav__menu1" id="menu1" tabindex="-1" aria-label="main navigation" >
+              <li class="nav__item1"><a href="#intro" class="nav__link1 scrollto" onclick="myFunction()">Home </a></li>
+              <li class="nav__item1"><a href="#about" class="nav__link1 scrollto" onclick="myFunction()">About Us </a></li>
+              <li class="nav__item1"><a href="#services" class="nav__link1 scrollto" onclick="myFunction()">Clubs </a></li>
+              <li class="nav__item1"><a href="#glimps" class="nav__link1 scrollto" onclick="myFunction()">Glimpses </a></li>
+              <li class="nav__item1"><a href="#team" class="nav__link1 scrollto" onclick="myFunction()">Guests </a></li>
+              <li class="nav__item1"><a href="#contact" class="nav__link1 scrollto" onclick="myFunction()">Contact Us </a></li>
+            </ul>
+               <!-- MENU TOGGLE BUTTON -->
+            <a href="#nav1" class="nav__toggle1" role="button" aria-expanded="false" aria-controls="menu" onclick="myFunction1()">
+              <svg class="menuicon1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <title>Toggle Menu</title>
+                <g>
+                  <line class="menuicon__bar1 red" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                  <line class="menuicon__bar1" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                  <line class="menuicon__bar1 red" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                  <line class="menuicon__bar1 red" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                  <circle class="menuicon__circle1 white" r="23" cx="25" cy="25"/>
+                </g>
+              </svg>
+            </a>
+            
+            <!-- ANIMATED BACKGROUND ELEMENT -->
+            <div class="splash1"></div>
+            
+          </nav>
+        </div>
+      </header>
+
+      <section id="intro" class="clearfix">
+        <div class="container">
+          <div class="intro-info">
+            <h1>Shaping<br /><span>dreams into</span><br />reality!</h1>
+          </div>
+          <div class="intro-img">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-2">
+                <a href="#services" class="scrollto link">
+                  <img src="club/CURBRAIN_WHITE.png" alt="" class="img-fluid" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="<strong>CUrBrain</strong>" data-bs-trigger="hover"/>
+                </a>
+              </div>
+            
+
+    <!-- Footer -->
+    
+    <footer>
+      <div class="container ftr">
+        <div class="sec aboutus">
+          <h2>Geekonix</h2>
+          <p>
+            Geekonix is the official Science & Technology club of Techno Main Salt Lake.
+          </p>
+          
+        </div>
+
+        <div class="sec quicklinks" style="margin-right: 0;">
+          <h2>Geek Alum Corner</h2>
+          <p>
+            If you are a Geek Alum and want to get in touch with
+            everyone again, join the community
+            <a href="https://groups.google.com/forum/#!forum/edge-geekalums" style="color: red;">here</a>.
+          </p>
+        </div>
+
+        <div class="sec contact">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i></span>
+              <br>
+              <span style="color: red;">EM-4/1, Sector V, <br>
+                Salt Lake, Kolkata, <br>
+                West Bengal 700091<br>
+              </span>
+            </li>
+            <li>
+              <span style="color: white"><i class="fa fa-phone" aria-hidden="true"></i></span>
+              <p>
+                <a href="tel:7602760944" style="color: red;">+91 89100 87562</a><br>
+                <a href="tel:8910058636" style="color: red;">+91 76850 52883</a>
+              </p>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope" aria-hidden="true" style="color: white"></i></span>
+              <p><a href="mailto:geekonix@gmail.com" style="color: red;">geekonix@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sec contact-det-mobile">
+
+        </div>
+
+      </div>
+
+      <div class="row sci mr-auto ml-auto">
+        <div class="col-2 item">
+          <a href="https://www.facebook.com/geekonix/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"
+          data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Follow us on <strong>Facebook</strong>" data-bs-trigger="hover"></i>
+          </a>
+        </div>
+
+        <div class="col-2 item">
+          <a href="https://www.instagram.com/geekonix/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"
+            data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Follow us on <strong>Instagram</strong>" data-bs-trigger="hover"></i>
+          </a>
+        </div>
+
+        <div class="col-2 item">
+          <a href="https://www.youtube.com/channel/UCSwFemGqe1XRmVlg1jRNJYw" target="_blank"><i class="fab fa-youtube" aria-hidden="true"
+            data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Subscribe to our <strong>YouTube</strong> channel" data-bs-trigger="hover"></i>
+           </a>
+        </div>
+
+        <div class="col-2 item">
+          <a href="https://twitter.com/GeekonixEdge" target="_blank"><i class="fab fa-twitter" aria-hidden="true"
+            data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Follow us on <strong>Twitter</strong>" data-bs-trigger="hover"></i>
+          </a>
+        </div>
+
+        <div class="col-2 item">
+          <a href="https://www.linkedin.com/company/geekonix-edge" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"
+            data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Follow us on <strong>LinkedIn</strong>" data-bs-trigger="hover"></i>
+           </a>
+        </div>
+
+        <div class="col-2 item">
+          <a href="https://edg.co.in/" target="_blank"><img src="./img/20210103_113142.png" style="width: 55px"
+            data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="Visit <strong>edg.co.in</strong>" data-bs-trigger="hover">
+          </a>  <!-- to show -->
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          © Copyright <strong>Geekonix</strong>. All rights reserved.
+        </div>
+        <div class="credits">
+        </div>
+      </div>
+
+    </footer>
+    
+    <!-- Footer end -->
+
+    <a href="#" class="back-to-top"><img src="img/up-arrow.svg"/></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+    <!-- Required jQuery & OwlCarousel 2                     -->
+    <script src="./lib/owlcarousel/owl.carousel.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
